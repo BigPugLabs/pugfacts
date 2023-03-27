@@ -1,11 +1,8 @@
-// import React from "react";
-// import logo from "../assets/react.svg"
-
-export function MainContent() {
+export default function MainContent(props) {
     return (
-        <section>
-            <h2>Top Pug Facts</h2>
-            <ul>
+        <main className={props.darkMode? "dark" : ""}>
+            <h1 className="main--title">Top Pug Facts</h1>
+            <ul className="main--facts">
                 <li>Pugs are snuggly</li>
                 <li>Pugs are big</li>
                 <li>Pug puppies are smol</li>
@@ -13,6 +10,6 @@ export function MainContent() {
                 <li>Pugs can climb on top of logs</li>
                 <li>Pugs sleep all day</li>
             </ul>
-        </section>
+        </main>
     )
 }
